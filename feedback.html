@@ -30,7 +30,7 @@
 
             <a href="index.html" class="logo navbar-brand">SAVORE</a>
 
-            <button class="mobile-menu-btn navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks" ...>
+            <button class="mobile-menu-btn navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks" aria-controls="navLinks" aria-expanded="false" aria-label="Toggle navigation">
                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu">
                   <line x1="4" x2="20" y1="12" y2="12" />
                   <line x1="4" x2="20" y1="6" y2="6" />
@@ -222,7 +222,7 @@
             <div class="form-container" data-aos="fade-up" data-aos-delay="200">
                <h2 class="form-title">Avalie sua Experiência</h2>
 
-               <form class="form-with-modal" data-modal="feedbackModal">
+               <form class="form-with-modal" data-modal="feedbackModal" method="POST">
                   <div class="form-grid">
                      <div class="form-group">
                         <label for="nome">Nome *</label>
@@ -237,6 +237,7 @@
                      <div class="form-group">
                         <label for="avaliacao">Comida *</label>
                         <select id="avaliacao" name="avaliacao" required>
+                           <option value="">Selecione</option>
                            <option value="5">⭐⭐⭐⭐⭐ </option>
                            <option value="4">⭐⭐⭐⭐ </option>
                            <option value="3">⭐⭐⭐</option>
@@ -259,6 +260,7 @@
                      <div class="form-group">
                         <label for="atendimento">Atendimento *</label>
                         <select id="atendimento" name="atendimento" required>
+                           <option value="">Selecione</option>
                            <option value="5">⭐⭐⭐⭐⭐</option>
                            <option value="4">⭐⭐⭐⭐</option>
                            <option value="3">⭐⭐⭐</option>
@@ -270,6 +272,7 @@
                      <div class="form-group">
                         <label for="voltaria">Voltaria? *</label>
                         <select id="voltaria" name="voltaria" required>
+                           <option value="">Selecione</option>
                            <option value="sim">Sim, com certeza!</option>
                            <option value="talvez">Talvez</option>
                            <option value="nao">Não</option>
@@ -279,6 +282,7 @@
                      <div class="form-group">
                         <label for="ambiente">Ambiente *</label>
                         <select id="ambiente" name="ambiente" required>
+                           <option value="">Selecione</option>
                            <option value="5">⭐⭐⭐⭐⭐</option>
                            <option value="4">⭐⭐⭐⭐</option>
                            <option value="3">⭐⭐⭐</option>
@@ -312,7 +316,7 @@
       </div>
    </section>
 
-   <div class="modal fade" id="feedbackModal" tabindex="-1" aria-labelledby="feedbackModalLabel" aria-hidden="true">
+   <div class="modal fade" id="feedbackModal" tabindex="-1" role="dialog" aria-labelledby="feedbackModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
          <div class="modal-content modal-custom">
             <div class="modal-body">

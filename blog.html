@@ -29,7 +29,7 @@
 
                 <a href="index.html" class="logo navbar-brand">SAVORE</a>
 
-                <button class="mobile-menu-btn navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks" ...>
+                <button class="mobile-menu-btn navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks" aria-controls="navLinks" aria-expanded="false" aria-label="Toggle navigation">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu">
                         <line x1="4" x2="20" y1="12" y2="12" />
                         <line x1="4" x2="20" y1="6" y2="6" />
@@ -279,7 +279,7 @@
                 <p class="newsletter-description">
                     Inscreva-se em nossa newsletter e receba dicas exclusivas, receitas e novidades do mundo gastronômico diretamente em seu e-mail.
                 </p>
-                <form class="newsletter-form">
+                <form class="newsletter-form" method="POST">
                     <input type="email" placeholder="Seu melhor e-mail" class="newsletter-input">
                     <button type="submit" class="btn btn-primary newsletter-btn">
                         <i class="lucide-send newsletter-btn-icon"></i>
@@ -291,7 +291,7 @@
     </section>
 
     <!-- Modal Complexo do Post em Destaque -->
-    <div class="modal fade" id="blogModal1" tabindex="-1" aria-labelledby="blogModal1Label" aria-hidden="true">
+    <div class="modal fade" id="blogModal1" tabindex="-1" role="dialog" aria-labelledby="blogModal1Label" aria-hidden="true">
         <div class="modal-dialog modal-xl modal-dialog-scrollable">
             <div class="modal-content modal-content-blog">
                 <div class="modal-header modal-header-blog">

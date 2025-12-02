@@ -31,7 +31,7 @@
 
             <a href="index.html" class="logo navbar-brand">SAVORE</a>
 
-            <button class="mobile-menu-btn navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks" ...>
+            <button class="mobile-menu-btn navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks" aria-controls="navLinks" aria-expanded="false" aria-label="Toggle navigation">
                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu">
                   <line x1="4" x2="20" y1="12" y2="12" />
                   <line x1="4" x2="20" y1="6" y2="6" />
@@ -72,7 +72,7 @@
 
          <!-- Reservation Form with Date Picker - Functionality #3 -->
          <div class="form-container" data-aos="fade-up" data-aos-delay="200">
-            <form class="form-with-modal" data-modal="reservaModal">
+            <form class="form-with-modal" data-modal="reservaModal" method="POST">
                <div class="form-grid">
                   <div class="form-group">
                      <label for="nome">Nome Completo *</label>
@@ -113,8 +113,9 @@
                   <div class="form-group">
                      <label for="pessoas">Número de Pessoas *</label>
                      <select id="pessoas" name="pessoas" required>
+                        <option value="">Selecione</option>
                         <option value="1">1 pessoa</option>
-                        <option value="2" selected>2 pessoas</option>
+                        <option value="2">2 pessoas</option>
                         <option value="3">3 pessoas</option>
                         <option value="4">4 pessoas</option>
                         <option value="5">5 pessoas</option>
@@ -139,7 +140,7 @@
    </section>
 
    <!-- Success Modal - Functionality #6: Modal de agradecimento com Bootstrap -->
-   <div class="modal fade" id="reservaModal" tabindex="-1" aria-labelledby="reservaModalLabel" aria-hidden="true">
+   <div class="modal fade" id="reservaModal" tabindex="-1" role="dialog" aria-labelledby="reservaModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
          <div class="modal-content" style="text-align: center; padding: 2rem;">
             <div class="modal-body">
