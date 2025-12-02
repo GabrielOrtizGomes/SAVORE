@@ -1,0 +1,193 @@
+/*
+ * Arquivo: galeria.css
+ * Estilos específicos para a página galeria-ambiente.html
+ * Contém estilos do grid da galeria e do lightbox.
+ */
+
+/* ==================================== */
+/* 1. TÍTULO DA PÁGINA */
+/* ==================================== */
+
+.page-gallery-title {
+   /* Estilo que estava inline: font-size: 2.5rem; margin-bottom: 1rem; */
+   font-size: 2.5rem;
+   margin-bottom: 1rem;
+   font-weight: bold; /* Adicionado para consistência */
+   color: var(--white); /* Assume a variável global de branco */
+}
+
+/* ==================================== */
+/* 2. LAYOUT DO GRID (Responsividade) */
+/* ==================================== */
+
+/* O seletor foi simplificado para a classe .gallery-grid-environment adicionada no HTML */
+.gallery-grid-environment {
+   display: grid;
+   grid-template-columns: 1fr; /* Mobile (padrão 1 coluna) */
+   gap: 2rem;
+}
+
+/* Tablet (2 colunas) */
+@media (min-width: 768px) {
+   .gallery-grid-environment {
+      grid-template-columns: repeat(2, 1fr);
+   }
+}
+
+/* ==================================== */
+/* 3. LIGHTBOX CUSTOMIZADO (Removido, mas mantido o CSS caso o GLightbox falhe) */
+/* ==================================== */
+
+/* NOTA: Mantido o CSS do Lightbox customizado caso você opte por não usar o GLightbox JS */
+
+/* Lightbox Styles */
+.lightbox {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.95);
+   z-index: 9999;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 2rem;
+}
+
+.lightbox-close {
+   position: absolute;
+   top: 2rem;
+   right: 2rem;
+   background: transparent;
+   border: none;
+   color: white;
+   cursor: pointer;
+   padding: 0.5rem;
+   transition: transform 0.3s;
+   z-index: 10000;
+}
+
+.lightbox-close:hover {
+   transform: scale(1.1);
+}
+
+.lightbox-close i {
+   width: 2rem;
+   height: 2rem;
+}
+
+.lightbox-content {
+   max-width: 90%;
+   max-height: 90%;
+   text-align: center;
+}
+
+.lightbox-content img {
+   max-width: 100%;
+   max-height: calc(90vh - 100px);
+   object-fit: contain;
+   border-radius: 8px;
+}
+
+.lightbox-info {
+   margin-top: 1.5rem;
+   color: white;
+}
+
+.lightbox-info h3 {
+   font-size: 1.5rem;
+   margin-bottom: 0.5rem;
+}
+
+.lightbox-info p {
+   color: var(--neutral-400);
+   font-size: 1rem;
+}
+
+/* Garante que o link da galeria não tenha a cor padrão do navegador */
+.gallery-item {
+   text-decoration: none; /* Remove sublinhado padrão */
+   color: inherit; /* Garante que a cor padrão seja a do container (branco ou cinza) */
+   display: block; /* Mantém o item da galeria como um bloco */
+   transition: all 0.3s;
+   position: relative;
+   overflow: hidden;
+   border-radius: 8px;
+}
+
+/* Estilos para o Carousel dentro do Gallery Item */
+.gallery-item .carousel {
+   border-radius: 8px;
+   overflow: hidden;
+}
+
+.gallery-item .carousel-inner {
+   border-radius: 8px;
+}
+
+.gallery-item .carousel-item img {
+   width: 100%;
+   height: 300px;
+   object-fit: cover;
+   border-radius: 8px;
+}
+
+/* Estiliza os controles do carousel */
+.gallery-item .carousel-control-prev,
+.gallery-item .carousel-control-next {
+   width: 15%;
+   opacity: 0;
+   transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .carousel-control-prev,
+.gallery-item:hover .carousel-control-next {
+   opacity: 1;
+}
+
+.gallery-item .carousel-control-prev-icon,
+.gallery-item .carousel-control-next-icon {
+   background-color: rgba(0, 0, 0, 0.5);
+   border-radius: 50%;
+   padding: 1rem;
+   background-size: 50%;
+}
+
+/* Overlay sobre o carousel */
+.gallery-item .gallery-overlay {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+   padding: 2rem 1rem 1rem;
+   pointer-events: none;
+   z-index: 10;
+}
+
+.gallery-item .gallery-overlay h3 {
+   color: white;
+   font-size: 1.25rem;
+   margin-bottom: 0.25rem;
+}
+
+.gallery-item .gallery-overlay p {
+   color: rgba(255, 255, 255, 0.8);
+   font-size: 0.875rem;
+   margin: 0;
+}
+
+/* Define a cor AMBAR no HOVER para o link da galeria */
+.gallery-item:hover {
+   /* Define uma cor que combine com seu tema (ex: o âmbar) */
+   color: var(--amber-500);
+   /* Adiciona qualquer efeito extra se desejar (transform, box-shadow, etc.) */
+   transform: translateY(-5px);
+   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Opcional: Garante que o texto do overlay não mude de cor */
+.gallery-item:hover .gallery-overlay h3 {
+   color: white; /* Mantém o texto do título do overlay branco */
+}

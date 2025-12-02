@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - SAVORE</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <link rel="stylesheet" href="https://unpkg.com/lucide-static@latest/font/lucide.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/blog.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header">
+        <nav class="navbar navbar-expand-lg container">
+
+            <div class="container-fluid px-0">
+
+                <a href="index.html" class="logo navbar-brand">SAVORE</a>
+
+                <button class="mobile-menu-btn navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks" ...>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu">
+                        <line x1="4" x2="20" y1="12" y2="12" />
+                        <line x1="4" x2="20" y1="6" y2="6" />
+                        <line x1="4" x2="20" y1="18" y2="18" />
+                    </svg>
+                </button>
+
+
+                <div class="collapse navbar-collapse justify-content-end" id="navLinks">
+
+                    <div class="navbar-nav gap-3 align-items-center">
+                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="cardapio.html" class="nav-link">Cardápio</a>
+                        <a href="chef.html" class="nav-link">Chef</a>
+                        <a href="reservas.html" class="nav-link">Reservas</a>
+                        <a href="delivery.html" class="nav-link">Delivery</a>
+                        <a href="blog.html" class="nav-link">Blog</a>
+                        <a href="galeria-ambiente.html" class="nav-link">Espaço</a>
+                        <a href="sobre.html" class="nav-link">História</a>
+                        <a href="localizacao.html" class="nav-link">Localização</a>
+                        <a href="contato.html" class="nav-link">Contato</a>
+                        <a href="feedback.html" class="nav-link">Feedback</a>
+                        <a href="faq.html" class="nav-link">FAQ</a>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <section class="page-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h1 class="blog-title">Blog Gastronômico</h1>
+                <p>Dicas, receitas e histórias do mundo da gastronomia</p>
+            </div>
+
+            <!-- Categorias -->
+            <div class="filter-buttons filter-buttons-wrapper" data-aos="fade-up">
+                <button class="filter-btn active" data-category="todos">Todos</button>
+                <button class="filter-btn" data-category="tecnicas">Técnicas</button>
+                <button class="filter-btn" data-category="ingredientes">Ingredientes</button>
+                <button class="filter-btn" data-category="harmonizacao">Harmonização</button>
+                <button class="filter-btn" data-category="sobremesas">Sobremesas</button>
+                <button class="filter-btn" data-category="receitas">Receitas</button>
+            </div>
+
+            <!-- Blog Grid -->
+            <div class="blog-grid">
+                <!-- Post 1 - Destaque -->
+                <article class="menu-card blog-post-featured" data-category="tecnicas" data-aos="fade-up">
+                    <div class="menu-card-image blog-card-image">
+                        <img src="https://public.youware.com/users-website-assets/prod/2f03a85f-f9e9-43cf-9301-9f13f107c465/ffb402cd1ab546d2be9cd3ebb8058104" alt="Gastronomia Francesa">
+                        <div class="featured-badge">
+                            ⭐ EM DESTAQUE
+                        </div>
+                    </div>
+                    <div class="menu-card-content">
+                        <span class="category-tag">Técnicas</span>
+                        <h2 class="blog-post-title-large">Os Segredos da Gastronomia Francesa</h2>
+                        <p class="blog-post-excerpt-large">
+                            Descubra as técnicas fundamentais que tornam a culinária francesa reconhecida mundialmente. Desde o mise en place até os métodos de cocção clássicos como braisage, sauté e pochage, explore como aplicamos esses conhecimentos centenários em nosso restaurante.
+                        </p>
+                        <p class="blog-post-excerpt-secondary">
+                            Aprenda sobre a importância dos cinco moldes-mãe (mother sauces), o uso correto de manteigas compostas e como a precisão na temperatura e tempo de cozimento pode elevar um prato simples a uma obra-prima gastronômica.
+                        </p>
+                        <div class="blog-meta-wrapper">
+                            <div class="blog-meta">
+                                <div class="blog-meta-item">
+                                    <i class="lucide-user blog-meta-icon"></i>
+                                    <span>Chef Alessandro</span>
+                                </div>
+                                <div class="blog-meta-item">
+                                    <i class="lucide-calendar blog-meta-icon"></i>
+                                    <span>15 Jan 2025</span>
+                                </div>
+                                <div class="blog-meta-item">
+                                    <i class="lucide-clock blog-meta-icon"></i>
+                                    <span>8 min de leitura</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary btn-read-more" data-bs-toggle="modal" data-bs-target="#blogModal1">Ler mais</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Post 2 -->
+                <article class="menu-card" data-category="ingredientes" data-aos="fade-up" data-aos-delay="100">
+                    <div class="menu-card-image blog-card-image">
+                        <img src="https://public.youware.com/users-website-assets/prod/2f03a85f-f9e9-43cf-9301-9f13f107c465/c7644938f5c9459f80fcdcf826df2075" alt="Ingredientes">
+                    </div>
+                    <div class="menu-card-content">
+                        <span class="category-tag">Ingredientes</span>
+                        <h2 class="blog-post-title">Ingredientes da Estação: Inverno 2025</h2>
+                        <p class="blog-post-excerpt">
+                            Conheça os ingredientes frescos que estamos utilizando nesta estação e como escolhemos os melhores fornecedores. Neste inverno, destacamos cogumelos frescos, raízes aromáticas, carnes nobres e chocolates especiais que trazem aconchego aos nossos pratos.
+                        </p>
+                        <div class="blog-meta-wrapper">
+                            <div class="blog-meta">
+                                <div class="blog-meta-item">
+                                    <i class="lucide-user blog-meta-icon"></i>
+                                    <span>Chef Alessandro</span>
+                                </div>
+                                <div class="blog-meta-item">
+                                    <i class="lucide-calendar blog-meta-icon"></i>
+                                    <span>10 Jan 2025</span>
+                                </div>
+                                <div class="blog-meta-item">
+                                    <i class="lucide-clock blog-meta-icon"></i>
+                                    <span>5 min de leitura</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary btn-read-more">Ler mais</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Post 3 -->
+                <article class="menu-card" data-category="harmonizacao" data-aos="fade-up" data-aos-delay="200">
+                    <div class="menu-card-image blog-card-image">
+                        <img src="https://public.youware.com/users-website-assets/prod/2f03a85f-f9e9-43cf-9301-9f13f107c465/0bff6acbe05f46afbf34c01bd8b5a403" alt="Harmonização">
+                    </div>
+                    <div class="menu-card-content">
+                        <span class="category-tag">Harmonização</span>
+                        <h2 class="blog-post-title">Harmonização Perfeita: Vinho e Comida</h2>
+                        <p class="blog-post-excerpt">
+                            Aprenda as melhores combinações de vinhos com nossos pratos e surpreenda-se com sabores únicos. Nossa Sommelier Maria compartilha dicas sobre como escolher o vinho perfeito para cada ocasião, desde jantares românticos até celebrações familiares.
+                        </p>
+                        <div class="blog-meta-wrapper">
+                            <div class="blog-meta">
+                                <div class="blog-meta-item">
+                                    <i class="lucide-user blog-meta-icon"></i>
+                                    <span>Sommelier Maria</span>
+                                </div>
+                                <div class="blog-meta-item">
+                                    <i class="lucide-calendar blog-meta-icon"></i>
+                                    <span>05 Jan 2025</span>
+                                </div>
+                                <div class="blog-meta-item">
+                                    <i class="lucide-clock blog-meta-icon"></i>
+                                    <span>6 min de leitura</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary btn-read-more">Ler mais</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Post 4 -->
+                <article class="menu-card" data-category="sobremesas" data-aos="fade-up" data-aos-delay="300">
+                    <div class="menu-card-image blog-card-image">
+                        <img src="https://public.youware.com/users-website-assets/prod/2f03a85f-f9e9-43cf-9301-9f13f107c465/592ec3e812204972b9ca35a2af4fdd18" alt="Sobremesas">
+                    </div>
+                    <div class="menu-card-content">
+                        <span class="category-tag">Sobremesas</span>
+                        <h2 class="blog-post-title">Sobremesas que Encantam</h2>
+                        <p class="blog-post-excerpt">
+                            Confira como criamos nossas sobremesas artesanais e os segredos por trás de cada doce. Da escolha do chocolate belga premium aos frutos tropicais brasileiros, cada sobremesa é uma experiência sensorial única que fecha sua refeição com maestria.
+                        </p>
+                        <div class="blog-meta-wrapper">
+                            <div class="blog-meta">
+                                <div class="blog-meta-item">
+                                    <i class="lucide-user blog-meta-icon"></i>
+                                    <span>Chef Patissier Ana</span>
+                                </div>
+                                <div class="blog-meta-item">
+                                    <i class="lucide-calendar blog-meta-icon"></i>
+                                    <span>28 Dez 2024</span>
+                                </div>
+                                <div class="blog-meta-item">
+                                    <i class="lucide-clock blog-meta-icon"></i>
+                                    <span>7 min de leitura</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary btn-read-more">Ler mais</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Post 5 - Novo -->
+                <article class="menu-card" data-category="receitas" data-aos="fade-up">
+                    <div class="menu-card-image blog-card-image">
+                        <img src="img/frescor-produto-delicioso-jantar-de-marisco.jpg" alt="Frutos do Mar">
+                    </div>
+                    <div class="menu-card-content">
+                        <span class="category-tag">Receitas</span>
+                        <h2 class="blog-post-title">O Segredo do Salmão Perfeito</h2>
+                        <p class="blog-post-excerpt">
+                            Aprenda a preparar um salmão suculento e saboroso com as técnicas profissionais utilizadas em nossa cozinha. Descubra a temperatura ideal, tempo de cocção e acompanhamentos que transformam este peixe em uma experiência gastronômica memorável.
+                        </p>
+                        <div class="blog-meta-wrapper">
+                            <div class="blog-meta">
+                                <div class="blog-meta-item">
+                                    <i class="lucide-user blog-meta-icon"></i>
+                                    <span>Chef Alessandro</span>
+                                </div>
+                                <div class="blog-meta-item">
+                                    <i class="lucide-calendar blog-meta-icon"></i>
+                                    <span>20 Dez 2024</span>
+                                </div>
+                                <div class="blog-meta-item">
+                                    <i class="lucide-clock blog-meta-icon"></i>
+                                    <span>10 min de leitura</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary btn-read-more">Ler mais</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Post 6 - Novo -->
+                <article class="menu-card" data-category="tecnicas" data-aos="fade-up" data-aos-delay="100">
+                    <div class="menu-card-image blog-card-image">
+                        <img src="img/alto-angulo-de-ostras-no-prato-com-faca-e-rodelas-de-limao.jpg" alt="Ostras">
+                    </div>
+                    <div class="menu-card-content">
+                        <span class="category-tag">Técnicas</span>
+                        <h2 class="blog-post-title">A Arte de Servir Ostras Frescas</h2>
+                        <p class="blog-post-excerpt">
+                            Descubra tudo sobre este fruto do mar sofisticado: como selecionar, abrir e servir ostras com elegância. Aprenda sobre as diferentes variedades, métodos de conservação e os acompanhamentos clássicos que realçam seu sabor único do mar.
+                        </p>
+                        <div class="blog-meta-wrapper">
+                            <div class="blog-meta">
+                                <div class="blog-meta-item">
+                                    <i class="lucide-user blog-meta-icon"></i>
+                                    <span>Chef Alessandro</span>
+                                </div>
+                                <div class="blog-meta-item">
+                                    <i class="lucide-calendar blog-meta-icon"></i>
+                                    <span>15 Dez 2024</span>
+                                </div>
+                                <div class="blog-meta-item">
+                                    <i class="lucide-clock blog-meta-icon"></i>
+                                    <span>6 min de leitura</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary btn-read-more">Ler mais</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Newsletter Subscription -->
+            <div class="newsletter-section" data-aos="fade-up">
+                <h3 class="newsletter-title">Receba nossas novidades</h3>
+                <p class="newsletter-description">
+                    Inscreva-se em nossa newsletter e receba dicas exclusivas, receitas e novidades do mundo gastronômico diretamente em seu e-mail.
+                </p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Seu melhor e-mail" class="newsletter-input">
+                    <button type="submit" class="btn btn-primary newsletter-btn">
+                        <i class="lucide-send newsletter-btn-icon"></i>
+                        Inscrever-se
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Complexo do Post em Destaque -->
+    <div class="modal fade" id="blogModal1" tabindex="-1" aria-labelledby="blogModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-scrollable">
+            <div class="modal-content modal-content-blog">
+                <div class="modal-header modal-header-blog">
+                    <div class="modal-header-inner">
+                        <span class="modal-category-tag">Técnicas</span>
+                        <h2 class="modal-title fs-3 fw-bold" id="blogModal1Label">Os Segredos da Gastronomia Francesa</h2>
+                        <div class="modal-meta">
+                            <div class="blog-meta-item">
+                                <i class="lucide-user blog-meta-icon"></i>
+                                <span>Chef Alessandro Martini</span>
+                            </div>
+                            <div class="blog-meta-item">
+                                <i class="lucide-calendar blog-meta-icon"></i>
+                                <span>15 Janeiro 2025</span>
+                            </div>
+                            <div class="blog-meta-item">
+                                <i class="lucide-clock blog-meta-icon"></i>
+                                <span>8 min de leitura</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body modal-body-blog">
+                    <!-- Imagem Principal -->
+                    <div class="modal-image-wrapper">
+                        <img src="https://public.youware.com/users-website-assets/prod/2f03a85f-f9e9-43cf-9301-9f13f107c465/ffb402cd1ab546d2be9cd3ebb8058104" alt="Gastronomia Francesa" class="modal-image">
+                    </div>
+
+                    <!-- Introdução -->
+                    <div class="modal-intro">
+                        <p class="modal-intro-text">
+                            A culinária francesa é reconhecida mundialmente como uma das mais sofisticadas e influentes. Suas técnicas milenares foram desenvolvidas e aperfeiçoadas por gerações de chefs que dedicaram suas vidas à arte culinária.
+                        </p>
+                        <p class="modal-intro-text">
+                            Neste artigo, compartilho os fundamentos essenciais que transformarão sua forma de cozinhar, desde o planejamento até a apresentação final do prato.
+                        </p>
+                    </div>
+
+                    <!-- Seção 1: Mise en Place -->
+                    <div class="modal-section">
+                        <h3 class="modal-section-title">
+                            <i class="lucide-chef-hat modal-section-icon"></i>
+                            1. Mise en Place - A Base de Tudo
+                        </h3>
+                        <p class="modal-section-text">
+                            O termo francês "mise en place" significa "tudo em seu lugar". É a preparação e organização de todos os ingredientes antes de começar a cozinhar. Este conceito é fundamental em cozinhas profissionais e pode revolucionar sua forma de cozinhar em casa.
+                        </p>
+                        <ul class="modal-list">
+                            <li class="modal-list-item">
+                                <strong>Lave e corte todos os vegetais</strong> antes de ligar o fogão
+                            </li>
+                            <li class="modal-list-item">
+                                <strong>Meça temperos e especiarias</strong> e organize em pequenos recipientes
+                            </li>
+                            <li class="modal-list-item">
+                                <strong>Prepare utensílios e panelas</strong> necessários para o preparo
+                            </li>
+                            <li class="modal-list-item">
+                                <strong>Leia a receita completamente</strong> antes de começar
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Seção 2: Métodos de Cocção -->
+                    <div class="modal-section">
+                        <h3 class="modal-section-title">
+                            <i class="lucide-flame modal-section-icon"></i>
+                            2. Métodos de Cocção Clássicos
+                        </h3>
+                        <div class="modal-cards-grid">
+                            <div class="modal-card">
+                                <h4 class="modal-card-title">Sauté (Saltear)</h4>
+                                <p class="modal-card-text">
+                                    Cozimento rápido em alta temperatura com pouca gordura. Ideal para vegetais crocantes e carnes seladas.
+                                </p>
+                            </div>
+                            <div class="modal-card">
+                                <h4 class="modal-card-title">Braisage (Brasear)</h4>
+                                <p class="modal-card-text">
+                                    Cozimento lento em líquido com tampa. Perfeito para cortes duros de carne que ficam macios e suculentos.
+                                </p>
+                            </div>
+                            <div class="modal-card">
+                                <h4 class="modal-card-title">Pochage (Escalfar)</h4>
+                                <p class="modal-card-text">
+                                    Cozimento delicado em líquido quente (não fervendo). Essencial para peixes, ovos e aves.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Seção 3: Molhos Mãe -->
+                    <div class="modal-section">
+                        <h3 class="modal-section-title">
+                            <i class="lucide-droplet modal-section-icon"></i>
+                            3. Os Cinco Molhos-Mãe (Mother Sauces)
+                        </h3>
+                        <p class="modal-section-text">
+                            Auguste Escoffier, o pai da culinária moderna, codificou os cinco molhos fundamentais dos quais derivam centenas de variações:
+                        </p>
+                        <div class="modal-numbered-list">
+                            <div class="modal-numbered-item">
+                                <div class="modal-number">1</div>
+                                <div>
+                                    <h4 class="modal-numbered-title">Béchamel</h4>
+                                    <p class="modal-numbered-text">Base de leite com roux branco. Origina molhos como Mornay e Soubise.</p>
+                                </div>
+                            </div>
+                            <div class="modal-numbered-item">
+                                <div class="modal-number">2</div>
+                                <div>
+                                    <h4 class="modal-numbered-title">Velouté</h4>
+                                    <p class="modal-numbered-text">Caldo claro (peixe, frango ou vitela) espessado com roux. Base para molhos supremo e allemande.</p>
+                                </div>
+                            </div>
+                            <div class="modal-numbered-item">
+                                <div class="modal-number">3</div>
+                                <div>
+                                    <h4 class="modal-numbered-title">Espagnole (Molho Espanhol)</h4>
+                                    <p class="modal-numbered-text">Fundo escuro de carne com roux escuro. A base para demi-glace e molhos derivados.</p>
+                                </div>
+                            </div>
+                            <div class="modal-numbered-item">
+                                <div class="modal-number">4</div>
+                                <div>
+                                    <h4 class="modal-numbered-title">Tomate</h4>
+                                    <p class="modal-numbered-text">Tomates cozidos com aromáticos. Origina marinara, arrabbiata e outros molhos italianos.</p>
+                                </div>
+                            </div>
+                            <div class="modal-numbered-item">
+                                <div class="modal-number">5</div>
+                                <div>
+                                    <h4 class="modal-numbered-title">Hollandaise</h4>
+                                    <p class="modal-numbered-text">Emulsão de gema e manteiga. Base para béarnaise e outros molhos emulsionados.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Conclusão -->
+                    <div class="modal-conclusion">
+                        <h3 class="modal-conclusion-title">Conclusão</h3>
+                        <p class="modal-conclusion-text">
+                            Dominar estas técnicas francesas fundamentais é o primeiro passo para se tornar um cozinheiro confiante. No SAVORE, aplicamos esses princípios diariamente, sempre com respeito à tradição e abertura para inovação.
+                        </p>
+                        <p class="modal-conclusion-text">
+                            Pratique cada técnica com paciência. A excelência na cozinha vem com repetição, atenção aos detalhes e paixão pelo que fazemos. Bon appétit!
+                        </p>
+                    </div>
+
+                    <!-- Tags -->
+                    <div class="modal-tags">
+                        <span class="modal-tags-label">Tags:</span>
+                        <span class="modal-tag">#TécnicasFrancesas</span>
+                        <span class="modal-tag">#GastronomiaProfissional</span>
+                        <span class="modal-tag">#MiseEnPlace</span>
+                        <span class="modal-tag">#MolhosMãe</span>
+                        <span class="modal-tag">#ChefAlessandro</span>
+                    </div>
+                </div>
+                <div class="modal-footer modal-footer-blog">
+                    <div>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+
+                <div class="footer-col">
+                    <h3 class="logo">SAVORE</h3>
+                    <p>Experiência gastronômica única com ingredientes frescos e pratos autorais criados por nosso chef premiado.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="cardapio.html">Cardápio</a></li>
+                        <li><a href="reservas.html">Reservas</a></li>
+                        <li><a href="delivery.html">Delivery</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contato</h4>
+                    <ul class="contact-list">
+                        <li>
+                            <a href="tel:+551199999999">
+                                <i data-lucide="phone"></i>
+                                <span>(11) 9999-9999</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:contato@savore.com">
+                                <i data-lucide="mail"></i>
+                                <span>contato@savore.com</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://maps.google.com/?q=Rua+Gourmet,123" target="_blank">
+                                <i data-lucide="map-pin"></i>
+                                <span>Rua Gourmet, 123 - SP</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-links">
+                        <a href="#" target="_blank" aria-label="Facebook">
+                            <i data-lucide="facebook"></i>
+                        </a>
+                        <a href="#" target="_blank" aria-label="Instagram">
+                            <i data-lucide="instagram"></i>
+                        </a>
+                        <a href="#" target="_blank" aria-label="Twitter">
+                            <i data-lucide="twitter"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright-text">
+                    © <span id="year">2025</span> SAVORE. Todos os direitos reservados.
+                </div>
+
+                <div class="dev-credits">
+                    <span>Desenvolvido por:</span>
+                    <ul>
+                        <li>Gabriel Ortiz</li>
+                        <li>Natã Peralta</li>
+                        <li>Andrey Pires</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- SmoothScroll JS -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@16.1.3/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>

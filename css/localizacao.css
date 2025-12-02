@@ -1,0 +1,227 @@
+/* ==================================== */
+/* 1. SEÇÃO DE LOCALIZAÇÃO (localizacao.html) */
+/* ==================================== */
+
+/* Título principal da seção */
+.location-title {
+    font-size: 2.5rem; 
+    margin-bottom: 1rem;
+}
+
+/* Container do Mapa */
+.map-section {
+    margin-bottom: 4rem;
+}
+
+.map-iframe-wrapper {
+    width: 100%; 
+    height: 400px; 
+    background: var(--neutral-800); 
+    border-radius: 8px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    overflow: hidden;
+    /* Para garantir que a sombra e o mapa se destaquem */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); 
+}
+
+.map-iframe-wrapper iframe {
+    border: 0;
+}
+
+/* ==================================== */
+/* 2. GRID DE INFO CARDS (Endereço, Como Chegar, Contato) */
+/* ==================================== */
+
+.info-card-grid {
+    display: grid; 
+    grid-template-columns: 1fr; /* Padrão Mobile */
+    gap: 2rem; 
+    margin-bottom: 4rem;
+}
+
+/* Regras de media query extraídas do bloco <style> no HTML */
+@media (min-width: 768px) {
+    .info-card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .info-card-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Card de Feature (Padrão Premium: Borda e Hover) */
+.feature-card {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--neutral-900);
+    border: 1px solid var(--neutral-800);
+    border-radius: 0.5rem;
+    
+    /* Padrão Premium: Borda de destaque e transição */
+    border-left: 4px solid var(--amber-500); 
+    transition: all 0.3s ease-in-out; 
+    cursor: default;
+}
+
+/* Padrão Premium: Efeito HOVER */
+.feature-card:hover {
+    transform: translateY(-4px); 
+    border-color: var(--amber-500); 
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4); 
+}
+
+/* Ícones dentro dos Info Cards */
+.info-icon {
+    width: 3rem; 
+    height: 3rem; 
+    color: var(--amber-500); 
+    margin-bottom: 1.5rem;
+}
+
+/* Título dentro dos Cards */
+.card-title {
+    font-size: 1.5rem; 
+    font-weight: bold; 
+    margin-bottom: 1rem;
+}
+
+/* Linhas de Endereço/Detalhes */
+.card-address-line {
+    color: var(--neutral-300); 
+    line-height: 1.8; 
+    margin-bottom: 0.5rem;
+}
+
+/* Lista de Detalhes (Como Chegar / Contato) */
+.card-details-list {
+    color: var(--neutral-300);
+    line-height: 1.8;
+}
+
+.card-details-item {
+    margin-bottom: 0.75rem;
+}
+.card-details-item-last {
+    margin-bottom: 0;
+}
+
+/* Destaque para o status "Fechado" no Horário */
+.status-closed {
+    color: var(--amber-500);
+    font-weight: 600;
+}
+
+
+/* ==================================== */
+/* 3. PONTOS DE REFERÊNCIA PRÓXIMOS */
+/* ==================================== */
+
+.landmarks-section {
+    margin-bottom: 4rem;
+}
+
+.landmarks-title {
+    font-size: 2rem; 
+    font-weight: bold; 
+    margin-bottom: 2rem; 
+    text-align: center;
+}
+
+.landmark-list {
+    display: grid; 
+    grid-template-columns: 1fr; 
+    gap: 1.5rem;
+}
+
+/* Responsividade para a lista de Referências */
+@media (min-width: 768px) {
+    .landmark-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 1024px) {
+    .landmark-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* ESTILO ATUALIZADO PARA O CARD DE REFERÊNCIA */
+.landmark-item {
+    background: var(--neutral-800); 
+    border-radius: 8px; 
+    display: flex; 
+    flex-direction: column; /* Agora é um card vertical */
+    overflow: hidden; /* Essencial para a imagem respeitar o border-radius */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Efeito Hover do Card */
+.landmark-item:hover {
+    transform: translateY(-4px); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Container da Imagem (Força a proporção 16:9) */
+.landmark-image-wrapper {
+    width: 100%;
+    padding-top: 56.25%; /* 9 / 16 = 0.5625 (Aspect Ratio 16:9) */
+    position: relative;
+    overflow: hidden;
+}
+
+.landmark-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem preencha o container sem distorcer */
+    transition: transform 0.3s;
+}
+
+/* Efeito Zoom na Imagem ao passar o mouse */
+.landmark-item:hover .landmark-image {
+    transform: scale(1.05);
+}
+
+/* Container do Ícone e Texto */
+.landmark-content {
+    padding: 1.5rem; 
+    display: flex; 
+    align-items: center; 
+    gap: 1rem;
+}
+
+.landmark-icon {
+    width: 2rem; 
+    height: 2rem; 
+    color: var(--amber-500);
+    flex-shrink: 0; 
+}
+
+.landmark-name {
+    font-weight: bold; 
+    margin-bottom: 0.25rem;
+}
+
+.landmark-distance {
+    color: var(--neutral-400); 
+    font-size: 0.875rem;
+    margin: 0; 
+}
+
+/* ==================================== */
+/* 4. FOOTER (Ajuste para classe movida) */
+/* ==================================== */
+
+.footer-developer-info {
+    margin-top: 1rem; 
+    font-size: 0.875rem; 
+    color: var(--neutral-500);
+}

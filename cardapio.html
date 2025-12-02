@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio - SAVORE</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/lucide-static@latest/font/lucide.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header id="header">
+        <nav class="navbar navbar-expand-lg container">
+
+            <div class="container-fluid px-0">
+
+                <a href="index.html" class="logo navbar-brand">SAVORE</a>
+
+                <button class="mobile-menu-btn navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks" ...>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu">
+                        <line x1="4" x2="20" y1="12" y2="12" />
+                        <line x1="4" x2="20" y1="6" y2="6" />
+                        <line x1="4" x2="20" y1="18" y2="18" />
+                    </svg>
+                </button>
+
+
+                <div class="collapse navbar-collapse justify-content-end" id="navLinks">
+
+                    <div class="navbar-nav gap-3 align-items-center">
+                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="cardapio.html" class="nav-link">Cardápio</a>
+                        <a href="chef.html" class="nav-link">Chef</a>
+                        <a href="reservas.html" class="nav-link">Reservas</a>
+                        <a href="delivery.html" class="nav-link">Delivery</a>
+                        <a href="blog.html" class="nav-link">Blog</a>
+                        <a href="galeria-ambiente.html" class="nav-link">Espaço</a>
+                        <a href="sobre.html" class="nav-link">História</a>
+                        <a href="localizacao.html" class="nav-link">Localização</a>
+                        <a href="contato.html" class="nav-link">Contato</a>
+                        <a href="feedback.html" class="nav-link">Feedback</a>
+                        <a href="faq.html" class="nav-link">FAQ</a>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <section class="page-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h1 class="section-title">Nosso Cardápio</h1>
+                <p>Pratos elaborados com ingredientes selecionados</p>
+            </div>
+
+            <div class="filter-buttons" data-aos="fade-up" data-aos-delay="100">
+                <button class="filter-btn active" data-category="todos">Todos</button>
+                <button class="filter-btn" data-category="entradas">Entradas</button>
+                <button class="filter-btn" data-category="principais">Pratos Principais</button>
+                <button class="filter-btn" data-category="sobremesas">Sobremesas</button>
+                <button class="filter-btn" data-category="bebidas">Bebidas</button>
+            </div>
+
+            <div class="menu-grid">
+                <div class="menu-card" data-category="entradas" data-aos="fade-up">
+                    <div class="menu-card-image">
+                        <img src="https://public.youware.com/users-website-assets/prod/2f03a85f-f9e9-43cf-9301-9f13f107c465/c7644938f5c9459f80fcdcf826df2075" alt="Carpaccio de Salmão">
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Carpaccio de Salmão</h3>
+                            <span class="menu-card-price">R$ 45,00</span>
+                        </div>
+                        <p class="menu-card-description">Salmão fresco com alcaparras e molho especial</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="entradas" data-aos="fade-up" data-aos-delay="100">
+                    <div class="menu-card-image">
+                        <img src="https://public.youware.com/users-website-assets/prod/2f03a85f-f9e9-43cf-9301-9f13f107c465/e8a5c5aa731b4b7bb90fb52df4d0e487" alt="Ostras Frescas">
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Ostras Frescas</h3>
+                            <span class="menu-card-price">R$ 58,00</span>
+                        </div>
+                        <p class="menu-card-description">Meia dúzia de ostras com limão siciliano</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="principais" data-aos="fade-up" data-aos-delay="200">
+                    <div class="menu-card-image">
+                        <img src="https://public.youware.com/users-website-assets/prod/2f03a85f-f9e9-43cf-9301-9f13f107c465/0bff6acbe05f46afbf34c01bd8b5a403" alt="Risoto">
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Risoto de Frutos do Mar</h3>
+                            <span class="menu-card-price">R$ 85,00</span>
+                        </div>
+                        <p class="menu-card-description">Arroz arbóreo com mix de frutos do mar frescos</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="principais" data-aos="fade-up">
+                    <div class="menu-card-image">
+                        <img src="https://public.youware.com/users-website-assets/prod/2f03a85f-f9e9-43cf-9301-9f13f107c465/ec5e7ac195e74c87aa4ec3ba6e6418d4" alt="Burger">
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Burger Gourmet</h3>
+                            <span class="menu-card-price">R$ 52,00</span>
+                        </div>
+                        <p class="menu-card-description">Hambúrguer artesanal 180g com queijo e bacon</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="principais" data-aos="fade-up" data-aos-delay="100">
+                    <div class="menu-card-image">
+                        <img src="https://public.youware.com/users-website-assets/prod/2f03a85f-f9e9-43cf-9301-9f13f107c465/ffb402cd1ab546d2be9cd3ebb8058104" alt="Degustação">
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Prato Degustação</h3>
+                            <span class="menu-card-price">R$ 120,00</span>
+                        </div>
+                        <p class="menu-card-description">Seleção especial do chef com 5 mini-pratos</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="sobremesas" data-aos="fade-up" data-aos-delay="200">
+                    <div class="menu-card-image">
+                        <img src="https://public.youware.com/users-website-assets/prod/2f03a85f-f9e9-43cf-9301-9f13f107c465/592ec3e812204972b9ca35a2af4fdd18" alt="Torta">
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Torta Artesanal</h3>
+                            <span class="menu-card-price">R$ 28,00</span>
+                        </div>
+                        <p class="menu-card-description">Torta do dia com sorvete de baunilha</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+
+                <div class="footer-col">
+                    <h3 class="logo">SAVORE</h3>
+                    <p>Experiência gastronômica única com ingredientes frescos e pratos autorais criados por nosso chef premiado.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="cardapio.html">Cardápio</a></li>
+                        <li><a href="reservas.html">Reservas</a></li>
+                        <li><a href="delivery.html">Delivery</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contato</h4>
+                    <ul class="contact-list">
+                        <li>
+                            <a href="tel:+551199999999">
+                                <i data-lucide="phone"></i>
+                                <span>(11) 9999-9999</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:contato@savore.com">
+                                <i data-lucide="mail"></i>
+                                <span>contato@savore.com</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://maps.google.com/?q=Rua+Gourmet,123" target="_blank">
+                                <i data-lucide="map-pin"></i>
+                                <span>Rua Gourmet, 123 - SP</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-links">
+                        <a href="#" target="_blank" aria-label="Facebook">
+                            <i data-lucide="facebook"></i>
+                        </a>
+                        <a href="#" target="_blank" aria-label="Instagram">
+                            <i data-lucide="instagram"></i>
+                        </a>
+                        <a href="#" target="_blank" aria-label="Twitter">
+                            <i data-lucide="twitter"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright-text">
+                    © <span id="year">2025</span> SAVORE. Todos os direitos reservados.
+                </div>
+
+                <div class="dev-credits">
+                    <span>Desenvolvido por:</span>
+                    <ul>
+                        <li>Gabriel Ortiz</li>
+                        <li>Natã Peralta</li>
+                        <li>Andrey Pires</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@16.1.3/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

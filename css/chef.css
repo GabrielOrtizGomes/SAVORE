@@ -1,0 +1,110 @@
+/* =========================================
+   ADICIONAIS PÁGINA CHEF (Colar no final)
+   ========================================= */
+
+/* --- 1. Layout do Perfil do Chef --- */
+.chef-profile-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+/* Mobile First: Texto embaixo, imagem em cima, ou vice-versa */
+.chef-content { order: 2; }
+.chef-image-wrapper { order: 1; }
+
+.chef-name {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: white; /* Garante contraste */
+}
+
+.chef-text {
+    color: var(--neutral-400);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.chef-image-wrapper img {
+    width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--neutral-800);
+}
+
+@media (min-width: 1024px) {
+    .chef-profile-container {
+        grid-template-columns: 1fr 1fr; /* 50% / 50% */
+    }
+    .chef-content { order: 1; }
+    .chef-image-wrapper { order: 2; }
+}
+
+/* --- 2. Timeline (Trajetória) --- */
+.timeline-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.timeline-item {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background-color: var(--neutral-900); /* Usa fundo padrão de cards */
+    border: 1px solid var(--neutral-800);
+    border-radius: 0.5rem;
+    border-left: 4px solid var(--amber-500); /* Detalhe colorido */
+    align-items: flex-start;
+    transition: transform 0.3s;
+}
+
+.timeline-item:hover {
+    transform: translateX(10px); /* Efeito sutil ao passar o mouse */
+    border-color: var(--amber-500);
+}
+
+.timeline-year {
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    background-color: var(--amber-500);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: white;
+}
+
+.timeline-content h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.timeline-content p {
+    color: var(--neutral-400);
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+/* --- 3. Grid de Especialidades (Ajuste para 4 colunas) --- */
+/* Se quiser que fique diferente do features-grid padrão de 3 colunas */
+@media (min-width: 1024px) {
+    .features-grid.specialties-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+body {
+    /* ... seus estilos atuais ... */
+    overflow-x: hidden; /* Corta qualquer elemento que tente sair da largura da tela */
+    width: 100%;
+}

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Localização - SAVORE</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/lucide-static@latest/font/lucide.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/localizacao.css">
+</head>
+
+<body>
+    <header id="header">
+        <nav class="navbar navbar-expand-lg container">
+
+            <div class="container-fluid px-0">
+
+                <a href="index.html" class="logo navbar-brand">SAVORE</a>
+
+                <button class="mobile-menu-btn navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks" ...>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu">
+                        <line x1="4" x2="20" y1="12" y2="12" />
+                        <line x1="4" x2="20" y1="6" y2="6" />
+                        <line x1="4" x2="20" y1="18" y2="18" />
+                    </svg>
+                </button>
+
+
+                <div class="collapse navbar-collapse justify-content-end" id="navLinks">
+
+                    <div class="navbar-nav gap-3 align-items-center">
+                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="cardapio.html" class="nav-link">Cardápio</a>
+                        <a href="chef.html" class="nav-link">Chef</a>
+                        <a href="reservas.html" class="nav-link">Reservas</a>
+                        <a href="delivery.html" class="nav-link">Delivery</a>
+                        <a href="blog.html" class="nav-link">Blog</a>
+                        <a href="galeria-ambiente.html" class="nav-link">Espaço</a>
+                        <a href="sobre.html" class="nav-link">História</a>
+                        <a href="localizacao.html" class="nav-link">Localização</a>
+                        <a href="contato.html" class="nav-link">Contato</a>
+                        <a href="feedback.html" class="nav-link">Feedback</a>
+                        <a href="faq.html" class="nav-link">FAQ</a>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <section class="page-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h1 class="section-header-title location-title">Nossa Localização</h1>
+                <p><span class="status-closed">Venha nos visitar no coração de São Paulo</span></p>
+            </div>
+
+            <div class="map-section" data-aos="fade-up">
+                <div class="map-iframe-wrapper">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.197683046142!2d-46.66169!3d-23.56187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1234567890" width="100%" height="100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+
+            <div class="info-card-grid">
+                <div class="feature-card" data-aos="fade-up">
+                    <i class="lucide-map-pin info-icon"></i>
+                    <h3 class="card-title">Endereço</h3>
+                    <p class="card-address-line">Rua Gourmet, 123</p>
+                    <p class="card-address-line">Jardins, São Paulo - SP</p>
+                    <p class="card-address-line">CEP: 01234-567</p>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <i class="lucide-navigation info-icon"></i>
+                    <h3 class="card-title">Como Chegar</h3>
+                    <div class="card-details-list">
+                        <p class="card-details-item"><strong>De Carro:</strong> Estacionamento próprio com manobrista</p>
+                        <p class="card-details-item"><strong>De Metrô:</strong> Estação Trianon-MASP (Linha 2-Verde) - 500m</p>
+                        <p class="card-details-item-last"><strong>De Ônibus:</strong> Linhas 2177, 875M, 907L</p>
+                    </div>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="lucide-phone info-icon"></i>
+                    <h3 class="card-title">Fale Conosco</h3>
+                    <div class="card-details-list">
+                        <p class="card-details-item">📞 Telefone: (11) 9999-9999</p>
+                        <p class="card-details-item">📞 Fixo: (11) 3333-3333</p>
+                        <p class="card-details-item">📧 Email: contato@restaurante.com</p>
+                        <p class="card-details-item-last">📧 Reservas: reservas@restaurante.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="landmarks-section" data-aos="fade-up">
+                <h2 class="landmarks-title">Pontos de Referência Próximos</h2>
+                <div class="landmark-list">
+                    <div class="landmark-item" data-aos="fade-up">
+                        <div class="landmark-image-wrapper">
+                            <img src="img/masp.jpeg" alt="Foto do MASP" class="landmark-image">
+                        </div>
+                        <div class="landmark-content">
+                            <i class="lucide-landmark landmark-icon"></i>
+                            <div>
+                                <h4 class="landmark-name">MASP - Museu de Arte</h4>
+                                <p class="landmark-distance">600 metros (8 min a pé)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="landmark-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="landmark-image-wrapper">
+                            <img src="img/trianon.jpg" alt="Foto do Parque Trianon" class="landmark-image">
+                        </div>
+                        <div class="landmark-content">
+                            <i class="lucide-tree-pine landmark-icon"></i>
+                            <div>
+                                <h4 class="landmark-name">Parque Trianon</h4>
+                                <p class="landmark-distance">400 metros (5 min a pé)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="landmark-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="landmark-image-wrapper">
+                            <img src="img/Paulista.jpg.webp" alt="Foto da Avenida Paulista" class="landmark-image">
+                        </div>
+                        <div class="landmark-content">
+                            <i class="lucide-building landmark-icon"></i>
+                            <div>
+                                <h4 class="landmark-name">Avenida Paulista</h4>
+                                <p class="landmark-distance">300 metros (4 min a pé)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+
+                <div class="footer-col">
+                    <h3 class="logo">SAVORE</h3>
+                    <p>Experiência gastronômica única com ingredientes frescos e pratos autorais criados por nosso chef premiado.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="cardapio.html">Cardápio</a></li>
+                        <li><a href="reservas.html">Reservas</a></li>
+                        <li><a href="delivery.html">Delivery</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contato</h4>
+                    <ul class="contact-list">
+                        <li>
+                            <a href="tel:+551199999999">
+                                <i data-lucide="phone"></i>
+                                <span>(11) 9999-9999</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:contato@savore.com">
+                                <i data-lucide="mail"></i>
+                                <span>contato@savore.com</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://maps.google.com/?q=Rua+Gourmet,123" target="_blank">
+                                <i data-lucide="map-pin"></i>
+                                <span>Rua Gourmet, 123 - SP</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-links">
+                        <a href="#" target="_blank" aria-label="Facebook">
+                            <i data-lucide="facebook"></i>
+                        </a>
+                        <a href="#" target="_blank" aria-label="Instagram">
+                            <i data-lucide="instagram"></i>
+                        </a>
+                        <a href="#" target="_blank" aria-label="Twitter">
+                            <i data-lucide="twitter"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright-text">
+                    © <span id="year">2025</span> SAVORE. Todos os direitos reservados.
+                </div>
+
+                <div class="dev-credits">
+                    <span>Desenvolvido por:</span>
+                    <ul>
+                        <li>Gabriel Ortiz</li>
+                        <li>Natã Peralta</li>
+                        <li>Andrey Pires</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@16.1.3/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

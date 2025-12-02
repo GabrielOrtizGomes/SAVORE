@@ -1,0 +1,312 @@
+/* ==================================== */
+/* 1. SEÇÃO DE DELIVERY (delivery.html) */
+/* ==================================== */
+
+.delivery-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* --- Container Principal de Processo (Passos e Imagem) --- */
+.process-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Padrão Mobile */
+    gap: 3rem;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+/* Layout Desktop para o container principal */
+@media (min-width: 768px) {
+    .process-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Título da seção de Passos */
+.process-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+/* Lista de Passos */
+.step-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Item individual do Passo */
+.step-item {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Wrapper do Ícone/Número do Passo */
+.step-icon-wrapper {
+    flex-shrink: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: var(--amber-500);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+
+/* Cabeçalho do Passo */
+.step-header {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+/* Descrição do Passo */
+.step-description {
+    color: var(--neutral-400);
+    font-size: 0.875rem;
+}
+
+/* Container de Botões (Ações) */
+.delivery-actions {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+/* Estilo da Imagem */
+.delivery-image {
+    width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+
+/* NOVO: Estilo para "Fechado" em laranja */
+.status-closed {
+    color: var(--amber-500); /* Cor da Logo */
+    font-weight: 600; /* Para dar destaque */
+}
+
+
+/* --- Grid de Features --- */
+/* --- Grid de Features --- */
+.feature-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Padrão Mobile */
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+/* Layout Desktop para Features (4 colunas) */
+@media (min-width: 1024px) {
+    .feature-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Base do Card de Feature (Substitui ou aprimora o style.css) */
+.feature-card {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--neutral-900);
+    border: 1px solid var(--neutral-800);
+    border-radius: 0.5rem;
+    
+    /* NOVO: Adiciona a borda de destaque e transição */
+    border-left: 4px solid var(--amber-500); 
+    transition: all 0.3s ease-in-out; 
+    cursor: default;
+}
+
+/* NOVO: Efeito HOVER no Card */
+.feature-card:hover {
+    transform: translateY(-4px); /* Leve levantamento */
+    border-color: var(--amber-500); /* Borda superior fica na cor de destaque */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4); /* Sombra mais visível */
+}
+
+/* NOVO: Aprimoramento do Ícone */
+.feature-icon {
+   width: 4rem; /* Ícone maior */
+   height: 4rem; /* Ícone maior */
+   color: var(--amber-500);
+   margin: 0 auto 1.5rem; /* Mais espaço abaixo do ícone */
+   /* Adicione um fundo circular sutil */
+   background-color: rgba(245, 158, 11, 0.05); /* amber-500 com transparência */
+   border-radius: 50%;
+   padding: 0.75rem; 
+}
+
+/* Layout Desktop para Features (4 colunas) */
+@media (min-width: 1024px) {
+    .feature-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* --- Grid de Info Cards (Área/Horário) --- */
+.info-cards-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Padrão Mobile */
+    gap: 2rem;
+}
+
+/* Layout Desktop para Info Cards (2 colunas) */
+@media (min-width: 1024px) {
+    .info-cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Título do Info Card */
+.info-card-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Parágrafo do Info Card */
+.info-card-text {
+    color: var(--neutral-400);
+    margin-bottom: 1rem;
+}
+
+/* Lista de Áreas */
+.area-list {
+    list-style: none;
+    padding: 0;
+    color: var(--neutral-400);
+}
+
+/* Item da Lista de Áreas */
+.area-item {
+    margin-bottom: 0.5rem;
+}
+
+/* Nota de Área de Entrega */
+.area-note {
+    font-size: 0.875rem;
+    color: var(--neutral-500);
+    margin-top: 1rem;
+}
+
+/* Detalhes de Horário */
+.time-details {
+    color: var(--neutral-400);
+}
+
+/* Linha de Horário Padrão */
+.time-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.75rem;
+}
+
+/* Linha de Horário com Separador */
+.time-row-separator {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--neutral-800);
+    padding-top: 0.75rem;
+}
+
+/* Valor de Horário (Aberto) */
+.time-value-open {
+    color: white;
+    font-weight: 500;
+}
+
+/* Valor de Horário (Fechado - Vermelho) */
+.time-value-closed {
+    color: #ef4444; /* Cor de erro/fechado */
+}
+
+/* --- Ajuste no Footer (consistência com outras páginas) --- */
+.footer-developer-info {
+    margin-top: 1rem; 
+    font-size: 0.875rem; 
+    color: var(--neutral-500);
+}
+
+/* ==================================== */
+/* 2. SEÇÃO DE PROCESSO E AÇÕES */
+/* ==================================== */
+
+/* O contêiner pai que envolve tudo (Passos e Imagem) */
+.process-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+@media (min-width: 768px) { /* Ajustei para 768px, conforme seu media query */
+    .process-container {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+/* Centraliza o título "Passos" */
+.process-title {
+    text-align: center; /* Mantém o título centralizado conforme solicitado */
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+/* --- Estilização dos Passos (Chave para Alinhamento) --- */
+.step-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    /* CHAVE 1: Limita a largura do bloco da lista e centraliza na coluna */
+    max-width: 400px;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.step-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    /* CHAVE 2: O texto interno do item é alinhado à esquerda para leitura, 
+       mas o bloco inteiro (step-list) permanece centralizado. */
+    text-align: left; 
+}
+
+/* Contêiner dos botões */
+.delivery-actions {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    
+    /* CHAVE 3 (Mobile/Padrão): Centraliza os botões */
+    justify-content: center;
+}
+
+/* Contêiner dos botões (Ajuste para Desktop, mantendo a centralização na coluna) */
+@media (min-width: 768px) {
+    .delivery-actions {
+        /* Garante que o bloco de botões também tenha a largura máxima 
+           do step-list e seja centralizado, evitando desalinhamento. */
+        max-width: 400px; 
+        margin-left: auto;
+        margin-right: auto;
+        /* Centraliza os botões dentro do max-width */
+        justify-content: center; 
+    }
+}
+
+/* Ajuste fino dos botões para não esticarem demais */
+.delivery-actions .btn {
+    width: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+/* ... O restante do seu CSS continua aqui ... */

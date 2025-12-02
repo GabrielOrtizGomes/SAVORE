@@ -1,0 +1,247 @@
+/* ==================================== */
+/* 0. CONFIGURAÇÃO GERAL E VARIÁVEIS */
+/* ==================================== */
+
+:root {
+   /* Cores (Exemplo, defina suas cores reais) */
+   --neutral-900: #1a1a1a;
+   --neutral-800: #2a2a2a;
+   --neutral-500: #a3a3a3;
+   --amber-500: #f59e0b;
+   --white: #ffffff;
+   --black: #000000;
+
+   /* Espaçamento */
+   --padding-section-mobile: 4rem;
+   --padding-section-desktop: 6rem;
+}
+
+body {
+   background-color: var(--neutral-900);
+   color: var(--white);
+   font-family: "Arial", sans-serif; /* Use sua fonte preferida */
+}
+
+a {
+   color: var(--amber-500);
+   text-decoration: none;
+   transition: color 0.3s;
+}
+
+/* ==================================== */
+/* ESTILOS EXTRAÍDOS DO INLINE (MANDATÓRIO) */
+/* ==================================== */
+
+/* Estilo para a cor do ícone do menu mobile */
+.mobile-icon-color {
+   stroke: var(--amber-500);
+}
+
+/* Estilo para a informação do desenvolvedor no rodapé */
+.footer-developer-info {
+   margin-top: 1rem;
+   font-size: 0.875rem;
+   color: var(--neutral-500);
+}
+
+/* ==================================== */
+/* SEÇÕES GLOBAIS E TIPOGRAFIA */
+/* ==================================== */
+
+.featured-section {
+   padding: var(--padding-section-mobile) 0;
+}
+
+@media (min-width: 992px) {
+   .featured-section {
+      padding: var(--padding-section-desktop) 0;
+   }
+}
+
+.section-header {
+   text-align: center;
+   margin-bottom: 3rem;
+}
+
+.section-header h2 {
+   font-size: clamp(2rem, 5vw, 3rem); /* Responsividade */
+   font-weight: bold;
+   color: var(--amber-500);
+}
+
+.section-header p {
+   font-size: 1.1rem;
+   color: var(--neutral-500);
+}
+
+/* ==================================== */
+/* SEÇÃO HERO */
+/* ==================================== */
+
+.hero {
+   height: 85vh;
+   min-height: 500px;
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   overflow: hidden;
+}
+
+.hero-overlay {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background: rgba(0, 0, 0, 0.7);
+   z-index: 1;
+}
+
+.hero-image {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   z-index: 0;
+}
+
+.hero-content {
+   position: relative;
+   z-index: 2;
+   max-width: 90%;
+}
+
+.hero-content h1 {
+   font-size: clamp(3rem, 7vw, 5rem);
+   color: var(--white);
+}
+
+.hero-content p {
+   font-size: clamp(1rem, 2vw, 1.3rem);
+   color: var(--neutral-300);
+   margin-bottom: 2rem;
+}
+
+.hero-buttons {
+   display: flex;
+   gap: 1rem;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+/* ==================================== */
+/* PRATOS EM DESTAQUE (GRID) */
+/* ==================================== */
+
+.dish-grid {
+   display: flex;
+   flex-direction: column; /* Mobile */
+   gap: 2rem;
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1024px) {
+}
+
+.dish-card {
+   border-radius: 0.5rem;
+   overflow: hidden;
+   /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); */
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+   cursor: pointer;
+}
+
+.dish-image {
+   position: relative;
+   max-height: 75vh;
+   width: 100%;
+   overflow: hidden;
+   border-radius: 0.5rem;
+   margin-bottom: 1rem;
+}
+
+.dish-image img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   transition: transform 0.5s;
+}
+
+.dish-card:hover .dish-image img {
+   transform: scale(1.1);
+}
+
+.dish-card h3 {
+   font-size: 1.5rem;
+   font-weight: bold;
+   margin-bottom: 0.5rem;
+}
+
+.dish-card p {
+   color: var(--neutral-400);
+   font-size: 1rem;
+}
+
+/* ==================================== */
+/* FOOTER (Estilos básicos para o grid funcionar) */
+/* ==================================== */
+
+.footer {
+   padding: 4rem 0 1.5rem;
+   background-color: var(--neutral-800);
+}
+
+.footer-grid {
+   display: grid;
+   grid-template-columns: 1fr;
+   gap: 2rem;
+   margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+   .footer-grid {
+      grid-template-columns: repeat(4, 1fr);
+   }
+}
+
+.footer-col h3:not(.logo),
+.footer-col h4 {
+   color: var(--white);
+   font-weight: 700;
+}
+
+.footer-col ul {
+   list-style: none;
+   padding: 0;
+}
+
+.footer-col ul li a {
+   color: var(--neutral-500);
+}
+
+.contact-list {
+   list-style: none;
+   padding: 0;
+}
+
+.contact-list li {
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+}
+
+.contact-list i {
+   color: var(--amber-500);
+}
+
+.social-links {
+   display: flex;
+   gap: 1rem;
+}
+
+.status-closed {
+   color: var(--amber-500);
+   font-weight: 600;
+}

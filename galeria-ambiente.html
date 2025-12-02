@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria do Ambiente - SAVORE</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/lucide-static@latest/font/lucide.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/galeria.css">
+</head>
+
+<body>
+    <header id="header">
+        <nav class="navbar navbar-expand-lg container">
+
+            <div class="container-fluid px-0">
+
+                <a href="index.html" class="logo navbar-brand">SAVORE</a>
+
+                <button class="mobile-menu-btn navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks" aria-controls="navLinks" aria-expanded="false" aria-label="Toggle navigation">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu">
+                        <line x1="4" x2="20" y1="12" y2="12" />
+                        <line x1="4" x2="20" y1="6" y2="6" />
+                        <line x1="4" x2="20" y1="18" y2="18" />
+                    </svg>
+                </button>
+
+
+                <div class="collapse navbar-collapse justify-content-end" id="navLinks">
+
+                    <div class="navbar-nav gap-3 align-items-center">
+                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="cardapio.html" class="nav-link">Cardápio</a>
+                        <a href="chef.html" class="nav-link">Chef</a>
+                        <a href="reservas.html" class="nav-link">Reservas</a>
+                        <a href="delivery.html" class="nav-link">Delivery</a>
+                        <a href="blog.html" class="nav-link">Blog</a>
+                        <a href="galeria-ambiente.html" class="nav-link active">Espaço</a>
+                        <a href="sobre.html" class="nav-link">História</a>
+                        <a href="localizacao.html" class="nav-link">Localização</a>
+                        <a href="contato.html" class="nav-link">Contato</a>
+                        <a href="feedback.html" class="nav-link">Feedback</a>
+                        <a href="faq.html" class="nav-link">FAQ</a>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <section class="page-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h1 class="page-gallery-title">Galeria do Ambiente</h1>
+                <p>Conheça os espaços acolhedores do nosso restaurante</p>
+            </div>
+
+            <div class="gallery-grid-environment">
+                <!-- Salão Principal Carousel -->
+                <div class="gallery-item" data-aos="fade-up">
+                    <div id="carouselSalao" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/salao.jpg" class="d-block w-100" alt="Salão Principal">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/restaurante-red-brown.jpg" class="d-block w-100" alt="Salão Principal - Vista 2">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselSalao" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselSalao" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Próximo</span>
+                        </button>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h3>Salão Principal</h3>
+                        <p>Ambiente elegante e aconchegante para suas refeições</p>
+                    </div>
+                </div>
+
+                <!-- Área Gourmet Carousel -->
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="100">
+                    <div id="carouselAreaGourmet" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/areaexterna.webp" class="d-block w-100" alt="Área Gourmet">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/mesa-de-configuracao-jovem-garconete.jpg" class="d-block w-100" alt="Área Gourmet - Vista 2">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselAreaGourmet" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselAreaGourmet" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Próximo</span>
+                        </button>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h3>Área Gourmet</h3>
+                        <p>Espaço especial para eventos e celebrações</p>
+                    </div>
+                </div>
+
+                <!-- Cozinha Aberta Carousel -->
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="200">
+                    <div id="carouselCozinha" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/cozinhachefes.jpg" class="d-block w-100" alt="Cozinha Aberta">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/chef-profissional-preparando-comida-na-cozinha.jpg" class="d-block w-100" alt="Cozinha Aberta - Vista 2">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselCozinha" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselCozinha" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Próximo</span>
+                        </button>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h3>Cozinha Aberta</h3>
+                        <p>Veja nossos chefs em ação preparando cada prato</p>
+                    </div>
+                </div>
+
+                <!-- Preparação Carousel -->
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="300">
+                    <div id="carouselPreparacao" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/finalizando.avif" class="d-block w-100" alt="Preparação">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/homem-em-pe-na-frente-prato-com-vegetais.jpg" class="d-block w-100" alt="Preparação - Vista 2">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselPreparacao" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselPreparacao" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Próximo</span>
+                        </button>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h3>Preparação</h3>
+                        <p>Dedicação em cada detalhe dos nossos pratos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+
+                <div class="footer-col">
+                    <h3 class="logo">SAVORE</h3>
+                    <p>Experiência gastronômica única com ingredientes frescos e pratos autorais criados por nosso chef premiado.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="cardapio.html">Cardápio</a></li>
+                        <li><a href="reservas.html">Reservas</a></li>
+                        <li><a href="delivery.html">Delivery</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contato</h4>
+                    <ul class="contact-list">
+                        <li>
+                            <a href="tel:+551199999999">
+                                <i data-lucide="phone"></i>
+                                <span>(11) 9999-9999</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:contato@savore.com">
+                                <i data-lucide="mail"></i>
+                                <span>contato@savore.com</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://maps.google.com/?q=Rua+Gourmet,123" target="_blank">
+                                <i data-lucide="map-pin"></i>
+                                <span>Rua Gourmet, 123 - SP</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-links">
+                        <a href="#" target="_blank" aria-label="Facebook">
+                            <i data-lucide="facebook"></i>
+                        </a>
+                        <a href="#" target="_blank" aria-label="Instagram">
+                            <i data-lucide="instagram"></i>
+                        </a>
+                        <a href="#" target="_blank" aria-label="Twitter">
+                            <i data-lucide="twitter"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright-text">
+                    © <span id="year">2025</span> SAVORE. Todos os direitos reservados.
+                </div>
+
+                <div class="dev-credits">
+                    <span>Desenvolvido por:</span>
+                    <ul>
+                        <li>Gabriel Ortiz</li>
+                        <li>Natã Peralta</li>
+                        <li>Andrey Pires</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@16.1.3/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script src="js/main.js"></script>
+
+    <script>
+        // Inicializa o GLightbox (Plugin oficial é muito mais robusto que o customizado)
+        document.addEventListener('DOMContentLoaded', function () {
+            const lightbox = GLightbox({
+                selector: '.glightbox',
+                touchNavigation: true,
+                loop: true,
+                openEffect: 'zoom',
+                closeEffect: 'zoom',
+                cssEfects: {
+                    fade: { in: 'fadeIn', out: 'fadeOut' },
+                    zoom: { in: 'zoomIn', out: 'zoomOut' }
+                }
+            });
+            // Inicializa AOS
+            AOS.init();
+        });
+    </script>
+</body>
+
+</html>

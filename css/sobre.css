@@ -1,0 +1,252 @@
+/*
+ * Arquivo: sobre.css
+ * Estilos específicos para a página sobre.html
+ * Depende das variáveis CSS (ex: --amber-500, --neutral-300, etc.) definidas no style.css
+ */
+
+/* ==================================== */
+/* 0. ESTILOS DE TÍTULOS E SEÇÕES */
+/* ==================================== */
+
+.page-title {
+    /* Estilo para h1 'Sobre Nós' - Substitui o style="font-size: 2.5rem; margin-bottom: 1rem;" */
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: var(--white); /* Assume que o h1 usa cor padrão ou branca */
+}
+
+/* ==================================== */
+/* 1. SEÇÃO HISTÓRIA (.history-grid) */
+/* ==================================== */
+
+.history-block {
+    margin-bottom: 4rem;
+}
+
+.history-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Mobile padrão */
+    gap: 3rem;
+    align-items: center;
+}
+
+/* Título de história - Substitui o style="font-size: 2rem; font-weight: bold; margin-bottom: 1.5rem;" */
+.history-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+/* Parágrafos - Substitui o style="margin-bottom: 1rem; line-height: 1.8; color: var(--neutral-300);" */
+.history-paragraph {
+    margin-bottom: 1rem; 
+    line-height: 1.8;
+    color: var(--neutral-300); 
+}
+
+/* Imagem - Substitui o style="width: 100%; height: 400px; object-fit: cover; border-radius: 8px;" */
+.history-image {
+    width: 100%;
+    height: 400px; 
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+/* ==================================== */
+/* 2. SEÇÃO VALORES (.values-grid) */
+/* ==================================== */
+
+.values-block {
+    margin-bottom: 4rem;
+}
+
+/* Título de valores - Substitui o style="font-size: 2rem; font-weight: bold; text-align: center; margin-bottom: 3rem;" */
+.values-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Mobile padrão */
+    gap: 2rem;
+    text-align: center; /* Centraliza o conteúdo dos cards */
+}
+
+/* Ícone - Substitui o style="width: 3rem; height: 3rem; color: var(--amber-500); margin-bottom: 1.5rem;" */
+.value-icon {
+    width: 3rem; 
+    height: 3rem; 
+    color: var(--amber-500);
+    margin: 0 auto 1.5rem; /* Centraliza o ícone e adiciona margem inferior */
+}
+
+/* Título do Card - Substitui o style="font-size: 1.5rem; font-weight: bold; margin-bottom: 1rem;" */
+.value-title {
+    font-size: 1.5rem; 
+    font-weight: bold; 
+    margin-bottom: 1rem;
+}
+
+/* Descrição do Card - Substitui o style="color: var(--neutral-400); line-height: 1.6;" */
+.value-description {
+    color: var(--neutral-400); 
+    line-height: 1.6;
+}
+
+
+/* ==================================== */
+/* 3. SEÇÃO ESTATÍSTICAS (.stats-grid) */
+/* ==================================== */
+
+/* Container - Substitui o style="background: linear-gradient(...); padding: 4rem 2rem; border-radius: 8px;" */
+.stats-container {
+    background: linear-gradient(135deg, var(--neutral-800), var(--neutral-900));
+    padding: 4rem 2rem;
+    border-radius: 8px;
+}
+
+/* Título - Substitui o style="font-size: 2rem; font-weight: bold; text-align: center; margin-bottom: 3rem;" */
+.stats-title {
+    font-size: 2rem; 
+    font-weight: bold; 
+    text-align: center; 
+    margin-bottom: 3rem;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    text-align: center;
+}
+
+/* Número da estatística - Substitui o style="font-size: 3rem; font-weight: bold; color: var(--amber-500); margin-bottom: 0.5rem;" */
+.stat-number {
+    font-size: 3rem; 
+    font-weight: bold; 
+    color: var(--amber-500);
+    margin-bottom: 0.5rem;
+}
+
+/* Rótulo da estatística - Substitui o style="color: var(--neutral-400); font-size: 1.125rem;" */
+.stat-label {
+    color: var(--neutral-400); 
+    font-size: 1.125rem;
+}
+
+
+/* ==================================== */
+/* 4. MEDIA QUERIES (Layout Responsivo) */
+/* ==================================== */
+
+/* Tablet (768px) */
+@media (min-width: 768px) {
+    /* Layout de Estatísticas (2 colunas) */
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Desktop (1024px) */
+@media (min-width: 1024px) {
+    /* Layout de História (2 colunas) */
+    .history-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Layout de Valores (3 colunas) */
+    .values-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Layout de Estatísticas (4 colunas) */
+    .stats-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Estilo do Rodapé (Para garantir que a informação de desenvolvedor use classe) */
+.footer-developer-info {
+    margin-top: 1rem; 
+    font-size: 0.875rem; 
+    color: var(--neutral-500);
+}
+
+/* ==================================== */
+/* 5. NOVA SEÇÃO: SUSTENTABILIDADE (.sustainability-block) */
+/* ==================================== */
+
+.sustainability-block {
+    margin-top: 4rem; /* Adiciona espaço após a seção de valores */
+    margin-bottom: 4rem;
+}
+
+.sustainability-title {
+    /* Reutiliza o estilo do título H2 da seção */
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.sustainability-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Mobile padrão */
+    gap: 3rem;
+    align-items: center;
+}
+
+@media (min-width: 1024px) {
+    /* Layout em 2 colunas para desktop */
+    .sustainability-grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* Inverte a ordem da imagem no desktop para contraste com a seção História */
+        grid-template-areas: "image text"; 
+    }
+    .sustainability-image-container {
+        grid-area: image;
+    }
+    .sustainability-text {
+        grid-area: text;
+    }
+}
+
+.sustainability-paragraph {
+    line-height: 1.8;
+    color: var(--neutral-300);
+    margin-bottom: 1.5rem;
+}
+
+.sustainability-image {
+    width: 100%;
+    height: 400px; 
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.sustainability-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 2rem;
+}
+
+.sustainability-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--neutral-100);
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+/* Cor do ícone de check */
+.sustainability-check {
+    color: var(--green-500); /* Usando a variável de cor verde */
+    width: 1.25rem;
+    height: 1.25rem;
+}

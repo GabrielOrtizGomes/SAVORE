@@ -1,0 +1,190 @@
+/* ==================================== */
+/* 1. SEÇÃO DE INFORMAÇÕES E RECURSOS */
+/* ==================================== */
+
+/* Container da seção de Informações */
+.info-section {
+    margin-bottom: 5rem; /* Margem aumentada */
+}
+
+/* Grid para os Cards de Informação */
+.info-cards-display {
+    display: grid;
+    grid-template-columns: 1fr; /* Padrão Mobile: 1 coluna */
+    gap: 1.5rem; /* Espaçamento ligeiramente menor para coesão */
+}
+
+/* Layout Tablet/Desktop: 3 colunas para as informações principais */
+@media (min-width: 768px) {
+    .info-cards-display {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+}
+
+/* --- Cards de Informação (Padrão de Design) --- */
+
+/* Estilo Base do Card */
+.feature-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%; 
+    
+    /* Alinha o conteúdo horizontalmente no centro (botões, títulos) */
+    align-items: center; 
+    
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--neutral-900);
+    border: 1px solid var(--neutral-800);
+    border-radius: 0.5rem;
+    
+    /* Borda de destaque e transição para o efeito hover */
+    border-left: 4px solid var(--amber-500); 
+    transition: all 0.3s ease-in-out; 
+    cursor: default;
+}
+
+/* Efeito HOVER no Card */
+.feature-card:hover {
+    transform: translateY(-4px); 
+    border-color: var(--amber-500); 
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4); 
+}
+
+/* Título dentro do Card */
+.feature-card h3 {
+    font-size: 1.35rem; /* Título um pouco maior */
+    font-weight: bold;
+    margin-bottom: 1rem; 
+    /* CORREÇÃO AQUI: DEIXANDO O TEXTO BRANCO */
+    color: var(--white); 
+}
+
+/* Detalhes de Informação (Telefones, E-mail, Horário) */
+.info-details {
+    display: block; 
+    flex-grow: 1; /* Permite que o bloco preencha o espaço (para feature-card h3 alinhar) */
+}
+
+.info-details p {
+    margin-bottom: 0.5rem; 
+    color: var(--neutral-300);
+    font-size: 0.95rem;
+}
+
+.info-details p:last-child {
+    margin-bottom: 0;
+}
+
+/* Destaque para o status "Fechado" no Horário */
+.status-closed {
+    color: var(--amber-500);
+    font-weight: 600;
+}
+
+/* --- NOVAS FEATURES (RECURSOS SECUNDÁRIOS) --- */
+
+.secondary-contact-section {
+    margin-bottom: 5rem;
+}
+
+.secondary-title {
+    font-size: 2rem; /* Título de seção maior */
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-align: center; 
+}
+
+/* Grid Secundário de 3 Colunas (FAQ, WhatsApp, Carreiras) */
+.secondary-grid {
+    /* Mantém as regras do .info-cards-display para responsividade */
+    grid-template-columns: 1fr; 
+}
+
+@media (min-width: 768px) {
+    .secondary-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+/* Cards de Link - herda o alinhamento superior de .feature-card */
+.feature-link-card {
+    padding: 2.5rem; /* Padding ligeiramente maior */
+}
+
+/* Descrição de texto nos novos cards */
+.feature-link-card .card-description {
+    color: var(--neutral-400);
+    font-size: 0.95rem; /* Fonte ligeiramente maior */
+    margin-bottom: 1.5rem;
+    text-align: center;
+    flex-grow: 1; /* Permite que o texto empurre o botão para baixo, se necessário */
+}
+
+/* Ajustes no botão para melhor alinhamento e separação */
+.feature-link-card .btn {
+    width: 100%; 
+    max-width: 200px; 
+    flex-shrink: 0;
+}
+
+
+/* ==================================== */
+/* 2. SEÇÃO DE FORMULÁRIO DE CONTATO */
+/* ==================================== */
+
+.contact-form-section {
+    margin-bottom: 4rem;
+}
+
+.contact-form-section .secondary-title {
+    margin-bottom: 1.5rem;
+}
+
+.form-container {
+    max-width: 600px; /* Limita a largura do formulário para profissionalismo */
+    margin: 0 auto;
+    padding: 2.5rem;
+    background-color: var(--neutral-900);
+    border: 1px solid var(--neutral-800);
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos de inputs e textareas Bootstrap para harmonizar com o tema escuro */
+.form-control {
+    background-color: var(--neutral-800); /* Input mais escuro */
+    border: 1px solid var(--neutral-700);
+    color: white;
+    padding: 0.75rem 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-control:focus {
+    background-color: var(--neutral-800);
+    border-color: var(--amber-500);
+    color: white;
+    box-shadow: 0 0 0 0.25rem rgba(245, 158, 11, 0.25); /* Sombra de foco âmbar sutil */
+}
+
+.form-label {
+    color: var(--neutral-300);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+/* Estilo do botão de envio */
+.btn-primary {
+    /* (Assumindo que o estilo de .btn-primary já está em style.css) */
+    font-weight: bold;
+    padding: 0.75rem 1rem;
+}
+
+/* --- Estilos do Footer para consistência --- */
+.footer-developer-info {
+    margin-top: 1rem; 
+    font-size: 0.875rem; 
+    color: var(--neutral-500);
+}
